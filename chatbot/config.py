@@ -1,0 +1,14 @@
+from slack_sdk import WebClient
+from jira import JIRA
+
+
+# Slack Configuration
+SLACK_TOKEN = "xoxb-8415944996480-8422514319411-XjfHilTjVFDoxd7BDmjDjRK5"
+SLACK_CHANNEL = "C08D3CC9M08"
+SLACK_CLIENT = WebClient(token=SLACK_TOKEN) 
+SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+
+JIRA_SERVER = "https://saimqureshi656.atlassian.net"
+JIRA_USER = "saimqureshi656@gmail.com"
+JIRA_API_TOKEN = "ATATT3xFfGF0FrXEvqgTca0DbDztRXFHdJ9QZWIV9UT8FcqovTr1RcDKOSEsXOH7FR58ewRl9blGqdlQCHTXcr4NJhcWBmtXARThI48AGbCkSDtT2lzqss02rr2SVDqYA7U5qTKI9ayHOALA40wbghFT8QBF38nS4qmNtzWbsS0OAl7L5wJy-5Y=75C5DA42"
+JIRA_CLIENT = JIRA(server=JIRA_SERVER, basic_auth=(JIRA_USER, JIRA_API_TOKEN))
